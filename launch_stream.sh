@@ -11,7 +11,7 @@ AUDIO_CHANNELS="2" #1 for mono output, 2 for stereo
 AUDIO_ERATE="160k" #audio encoding rate
 STREAM_KEY="" #your twitch stream key goes here
 SERVER="live-mrs" #  https://stream.twitch.tv/ingests/ for list
-NDI_INPUT="DESKTOP-18HJ647 (JessPC)"
+NDI_INPUT="DESKTOP-168HG7 (PC-2)"
 
 ~/ffmpeg-ndi/ffmpeg  -f libndi_newtek -i "$NDI_INPUT" -s "$INRES" -r "$FPS" \
 -f flv -ac $AUDIO_CHANNELS -b:a $AUDIO_ERATE -ar $AUDIO_SRATE \
